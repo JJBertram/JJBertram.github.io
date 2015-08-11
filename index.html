@@ -10,7 +10,6 @@
 
 	<!-- Optional theme -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
-</head>
 <style>
 	body
 	{
@@ -97,47 +96,24 @@
 	{
 		color: #FAF375;
 	}
-	@media (min-width: 768px) {
-  #tagline
-  {
-    display:none;
-  }
-  .jumbotron p
-  {
-  	font-size: 18px;
-  }
-}
-@media (min-width: 450px) {
-  #tagline
-  {
-    display:none;
-  }
-  .jumbotron p
-  {
-  	font-size: 18px;
-  }
-}
-@media (min-width: 768px) {
-  #tagline
-  {
-    display:none;
-  }
-  .jumbotron p
-  {
-  	font-size: 18px;
-  }
-}
-@media (min-width: 320px) {
-  #tagline
-  {
-    display:none;
-  }
-  .jumbotron p
-  {
-  	font-size: 18px;
-  }
-}
+	@media only screen and (min-width:320px) and (max-width: 768px) {
+	  	#tagline
+	  	{
+	    display:none;
+	  	}
+	  	.jumbotron p
+	  	{
+	  	font-size: 18px;
+	  	}
+	  	.navbar-nav
+	  	{
+	  		float:none;
+	  		text-align:center;
+	  	}
+	}
 </style>
+</head>
+
 <body data-spy="scroll" data-target="#my-navbar">
   <!-- Navbar -->
   	<nav class="navbar navbar-inverse navbar-fixed-top" id="my-navbar">
@@ -190,7 +166,7 @@
                   <p style = "text-align: left; color: #fff;">A web gallery I put together for my friend's artwork. He asked for a site that was responsive, easy to manage, and clean in design.</p></div>
                 </div>
               </div>
-            </div>
+            </div><!--end col -->
             <div id = "jolkona" class="col-sm-4">
               <div class="panel panel-default text-center">
                 <div class="panel-body">
@@ -199,7 +175,7 @@
                   <p style = "text-align: left; color: #fff;">As a web-development intern here, I used a Bootstrap framework and Wordpress to put together front-end projects, build page mockups with PhotoShop, and tackle bugs.</p></div>
                 </div>
               </div>
-            </div>
+            </div><!--end col -->
             <div id = "github" class="col-sm-4">
               <div class="panel panel-default text-center">
                 <div class="panel-body">  
@@ -208,7 +184,7 @@
                   <p style = "text-align: left; color: #fff;">I built my github landing page from scratch using Bootstrap. I've also been working on Javascript mini-games to stay fresh with my JS skills. The latter can be found <a href ="http://jjbertram.github.io/game-design/" target = "_blank">here</a>.</p></div>
                 </div>
               </div>
-            </div>
+            </div><!--end col -->
             <div id = "firstpagesage" class="col-sm-4">
               <div class="panel panel-default text-center">
                 <div class="panel-body">  
@@ -217,7 +193,10 @@
                   <p style = "text-align: left; color: #fff;">I worked here as a 'technical assistant'. My duties included: SEO & error handling, front-end web development, page mock-ups, and content managment.</p></div>
                 </div>
               </div>
-            </div>
+            </div><!--end col -->
           </div><!--end row -->
         </div><!--end containter -->
-  	
+    <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</body>
+</html>
